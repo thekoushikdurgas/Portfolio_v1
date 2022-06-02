@@ -1,4 +1,3 @@
-import logo from './img/about.jpg';
 import React from 'react';
 
 function App() {
@@ -64,7 +63,7 @@ function App() {
         <div className="content">
           <div className="title"><span>About Me</span></div>
           <div className="about-details">
-            <div className="left"><img src={logo} alt="logo" /></div>
+            <div className="left"><img src="https://raw.githubusercontent.com/thekoushikdurgas/TKDstroage/main/private/pic.jpg" alt="logo" /></div>
             <div className="right">
               <div className="topic">Designing Is My Passion</div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, porro veritatis pariatur, nobis
