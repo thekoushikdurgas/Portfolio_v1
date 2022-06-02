@@ -45,8 +45,8 @@ nav {
   transition: all 0.3s ease;
   font-family: "Ubuntu", sans-serif;
 }
-nav.sticky {
-  background: #4070f4;
+nav.stickynav {
+  background: var(--tkd2);
   padding: 13px 0;
 }
 nav .navbar {
@@ -59,10 +59,10 @@ nav .navbar {
 nav .navbar .logo a {
   font-weight: 500;
   font-size: 35px;
-  color: #4070f4;
+  color: var(--tkd2);
 }
-nav.sticky .navbar .logo a {
-  color: #fff;
+nav.stickynav .navbar .logo a {
+  color: var(--tkd3);
 }
 nav .navbar .menu {
   display: flex;
@@ -75,31 +75,31 @@ nav .navbar .menu li {
 .navbar .menu a {
   font-size: 18px;
   font-weight: 500;
-  color: #0e2431;
+  color: var(--tkd1);
   padding: 6px 0;
   transition: all 0.4s ease;
 }
 .navbar .menu a:hover {
-  color: #4070f4;
+  color: var(--tkd2);
 }
-nav.sticky .menu a {
-  color: #fff;
+nav.stickynav .menu a {
+  color: var(--tkd3);
 }
-nav.sticky .menu a:hover {
-  color: #0e2431;
+nav.stickynav .menu a:hover {
+  color: var(--tkd1);
 }
 .navbar .media-icons a {
-  color: #4070f4;
+  color: var(--tkd2);
   font-size: 18px;
   margin: 0 6px;
 }
-nav.sticky .media-icons a {
-  color: #fff;
+nav.stickynav .media-icons a {
+  color: var(--tkd3);
 }
 nav .menu-btn,
 .navbar .menu .cancel-btn {
   position: absolute;
-  color: #fff;
+  color: var(--tkd3);
   right: 30px;
   top: 20px;
   font-size: 20px;
@@ -108,18 +108,19 @@ nav .menu-btn,
   display: none;
 }
 nav .menu-btn {
-  color: #4070f4;
+  color: var(--tkd2);
 }
-nav.sticky .menu-btn {
-  color: #fff;
+nav.stickynav .menu-btn {
+  color: var(--tkd3);
 }
 .navbar .menu .menu-btn {
-  color: #fff;
+  color: var(--tkd3);
 }
 .home {
   height: 100vh;
   width: 100%;
-  background: url("https://raw.githubusercontent.com/thekoushikdurgas/TKDstroage/main/private/bg.jpg") no-repeat;
+  background: url("https://raw.githubusercontent.com/thekoushikdurgas/TKDstroage/main/private/bg.jpg")
+    no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -135,10 +136,10 @@ nav.sticky .menu-btn {
 }
 .home .text-one {
   font-size: 25px;
-  color: #0e2431;
+  color: var(--tkd1);
 }
 .home .text-two {
-  color: #0e2431;
+  color: var(--tkd2);
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
@@ -146,32 +147,32 @@ nav.sticky .menu-btn {
 .home .text-three {
   font-size: 40px;
   margin: 5px 0;
-  color: #4070f4;
+  color: var(--tkd1);
 }
 .home .text-four {
   font-size: 23px;
   margin: 5px 0;
-  color: #0e2431;
+  color: var(--tkd1);
 }
 .home .button {
   margin: 14px 0;
 }
-.home .button button {
+.home .button a {
   outline: none;
   padding: 8px 16px;
   border-radius: 6px;
   font-size: 25px;
   font-weight: 400;
-  background: #4070f4;
-  color: #fff;
+  background: var(--tkd2);
+  color: var(--tkd3);
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
 }
-.home .button button:hover {
-  border-color: #4070f4;
-  background-color: #fff;
-  color: #4070f4;
+.home .button a:hover {
+  border-color: var(--tkd2);
+  background-color: var(--tkd3);
+  color: var(--tkd2);
 }
 section {
   padding-top: 40px;
@@ -192,7 +193,7 @@ section .title {
   margin-bottom: 40px;
 }
 section .title span {
-  color: #0e2431;
+  color: var(--tkd1);
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -204,7 +205,7 @@ section .title span::after {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #4070f4;
+  background: var(--tkd2);
   left: 0;
   bottom: 0;
 }
@@ -225,36 +226,37 @@ section .title span::after {
 }
 .about-details .right {
   width: 55%;
+  padding: 41px;
 }
 section .topic {
-  color: #0e2431;
+  color: var(--tkd1);
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 .about-details .right p {
   text-align: justify;
-  color: #0e2431;
+  color: var(--tkd1);
 }
 section .button {
   margin: 16px 0;
 }
-section .button button {
+section .button a {
   outline: none;
   padding: 8px 16px;
   border-radius: 4px;
   font-size: 25px;
   font-weight: 400;
-  background: #4070f4;
-  color: #fff;
+  background: var(--tkd2);
+  color: var(--tkd3);
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.4s ease;
 }
-section .button button:hover {
-  border-color: #4070f4;
-  background-color: #fff;
-  color: #4070f4;
+section .button a:hover {
+  border-color: var(--tkd2);
+  background-color: var(--tkd3);
+  color: var(--tkd2);
 }
 .skills {
   background: #f0f8ff;
@@ -271,7 +273,7 @@ section .button button:hover {
   width: 50%;
 }
 .skills-details p {
-  color: #0e2431;
+  color: var(--tkd1);
   text-align: justify;
 }
 .skills .skills-details .experience {
@@ -280,11 +282,11 @@ section .button button:hover {
   margin: 0 10px;
 }
 .skills-details .experience .num {
-  color: #0e2431;
+  color: var(--tkd1);
   font-size: 80px;
 }
 .skills-details .experience .exp {
-  color: #0e2431;
+  color: var(--tkd1);
   margin-left: 20px;
   font-size: 18px;
   font-weight: 500;
@@ -302,11 +304,11 @@ section .button button:hover {
 }
 .skills-details .boxes .topic {
   font-size: 20px;
-  color: #4070f4;
+  color: var(--tkd2);
 }
 .skills-details .boxes .per {
   font-size: 60px;
-  color: #4070f4;
+  color: var(--tkd2);
 }
 .services .boxes {
   display: flex;
@@ -324,33 +326,33 @@ section .button button:hover {
   transition: all 0.4s ease;
 }
 .services .boxes .box:hover {
-  background: #4070f4;
-  color: #fff;
+  background: var(--tkd2);
+  color: var(--tkd3);
 }
 .services .boxes .box .icon {
   height: 50px;
   width: 50px;
-  background: #4070f4;
+  background: var(--tkd2);
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
   font-size: 18px;
-  color: #fff;
+  color: var(--tkd3);
   margin: 0 auto 10px auto;
   transition: all 0.4s ease;
 }
 .boxes .box:hover .icon {
-  background-color: #fff;
-  color: #4070f4;
+  background-color: var(--tkd3);
+  color: var(--tkd2);
 }
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p {
-  color: #0e2431;
+  color: var(--tkd1);
   transition: all 0.4s ease;
 }
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p {
-  color: #fff;
+  color: var(--tkd3);
 }
 .contact {
   background: #f0f8ff;
@@ -365,7 +367,7 @@ section .button button:hover {
   margin: auto;
 }
 footer {
-  background: #4070f4;
+  background: var(--tkd2);
   padding: 15px 0;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -373,11 +375,11 @@ footer {
 footer .text span {
   font-size: 17px;
   font-weight: 400;
-  color: #fff;
+  color: var(--tkd3);
 }
 footer .text span a {
   font-weight: 500;
-  color: #fff;
+  color: var(--tkd3);
 }
 footer .text span a:hover {
   text-decoration: underline;
@@ -386,8 +388,8 @@ footer .text span a:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  color: #fff;
-  background: #4070f4;
+  color: var(--tkd3);
+  background: var(--tkd2);
   padding: 7px 12px;
   font-size: 18px;
   border-radius: 6px;
@@ -432,7 +434,7 @@ footer .text span a:hover {
     position: fixed;
     left: -100%;
     top: 0;
-    background: #0e2431;
+    background: var(--tkd1);
     height: 100vh;
     max-width: 400px;
     width: 100%;
@@ -447,11 +449,11 @@ footer .text span a:hover {
   nav .navbar .menu a {
     font-size: 23px;
     display: block;
-    color: #fff;
+    color: var(--tkd3);
     margin: 10px 0;
   }
-  nav.sticky .menu a:hover {
-    color: #4070f4;
+  nav.stickynav .menu a:hover {
+    color: var(--tkd2);
   }
   nav .navbar .media-icons {
     display: none;
@@ -497,6 +499,6 @@ footer .text span a:hover {
   }
   .skills-details .boxes .per {
     font-size: 50px;
-    color: #4070f4;
+    color: var(--tkd2);
   }
 }

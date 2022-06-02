@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 function App() {
   const [sidebardisplay, setsidebardisplay] = React.useState('');
@@ -9,7 +10,7 @@ function App() {
   const [menubtnpointerEvents, setmenubtnpointerEvents] = React.useState('');
   window.onscroll = function () {
     if (document.documentElement.scrollTop > 20) {
-      setnavsticky("sticky");
+      setnavsticky("stickynav");
       setsidebardisplay('block');
     } else {
       setnavsticky("");
@@ -38,7 +39,7 @@ function App() {
               setscrollBtnpointerEvents('auto');
             }}><i className="fas fa-times" /></div>
           </ul>
-          <div className="media-icons"><a href="/"><i className="fab fa-facebook-f" /></a><a href="/"><i className="fab fa-twitter" /></a><a href="/"><i className="fab fa-instagram" /></a></div>
+          <div className="media-icons"><a href="https://www.linkedin.com/in/koushikchandrasaha/"><i className="bi bi-linkedin" /></a><a href="https://github.com/thekoushikdurgas"><i className="icon-social-github"></i></a><a href="https://www.codechef.com/users/koushikdurgas"><i className="tkd6-chef-toque"></i></a></div>
         </div>
         <div className="menu-btn" style={{ opacity: menubtnopacity, pointerEvents: menubtnpointerEvents }} onClick={() => {
           setnavBaractive('active');
@@ -51,12 +52,13 @@ function App() {
       <section className="home" id="home">
         <div className="home-content">
           <div className="text">
-            <div className="text-one">Hello,</div>
-            <div className="text-two">I'm Prem Shahi</div>
-            <div className="text-three">UI/UX Designer</div>
-            <div className="text-four">From Nepal</div>
+            <div className="text-two">Koushik</div>
+            <div className="text-two">Chandra</div>
+            <div className="text-two">Saha</div>
+            <div className="text-three">Full Stack Web and Software developer</div>
+            <div className="text-four">From Durgapur, West Bengal</div>
           </div>
-          <div className="button"><button>Hire Me</button></div>
+          <div className="button"><a href='https://www.canva.com/design/DAEwh0dnL9c/3147-xez2L35XgQoEM0Sfw/edit'>Cv / Resume</a></div>
         </div>
       </section>
       <section className="about" id="about">
@@ -66,15 +68,15 @@ function App() {
             <div className="left"><img src="https://raw.githubusercontent.com/thekoushikdurgas/TKDstroage/main/private/pic.jpg" alt="logo" /></div>
             <div className="right">
               <div className="topic">Designing Is My Passion</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, porro veritatis pariatur, nobis
-                voluptatem ipsum repellat nemo quisquam error reprehenderit recusandae odio vel, suscipit. Voluptas mollitia
-                accusantium quaerat aspernatur labore dolorum placeat ipsa sint nam perspiciatis eos consectetur veritatis
-                debitis, quis aliquam unde sed maiores sit! Hic molestiae optio iste iure earum amet nostrum quaerat facere
-                quae veniam maiores harum iusto aperiam vel inventore illo voluptatibus voluptates quo impedit voluptatum
-                error vitae, omnis praesentium? Aperiam nulla non, nesciunt fuga rem perferendis alias et, temporibus,
-                distinctio culpa unde a laborum libero ducimus. Facilis veniam sit praesentium, voluptatibus sint maxime
-                iusto eaque.</p>
-              <div className="button"><button>Download CV</button></div>
+              <p><strong>Hello! I’m Koushik Chandra Saha.</strong><br />Back-end & Frond-end developer from Durgapur,India. I have rich experience in wordpress, also I am good at Magento. I love to talk with you about our unique.</p>
+              <p>I am currently pursuing my 3-year B-Tech in Computer Science and Engineering from NIT, Arunachal Pradesh. As part of my curriculum, I am expected to do a summer internship. I came across a project under your Company section and became interested in the same to nurture my skills as an aspiring Computer Engineer. I am well versed in Programming and want to take up the summer internship as an opportunity to work under able guidance in a suitable learning environment.</p>
+              <p>I intend to work hard and give my best if given a suitable opportunity. Looking forward to hearing from you</p>
+              <p>Please find attached my CV for your reference.</p>
+              <p>Thank you. Regards,</p>
+              <p>Koushik Chandra Saha</p>
+              <p>koushikchandrasaha558@gmail.com</p>
+              <p>8250734192</p>
+              <div className="button"><><a href='https://www.canva.com/design/DAEwh0dnL9c/3147-xez2L35XgQoEM0Sfw/edit'>Download CV</a></></div>
             </div>
           </div>
         </div>
